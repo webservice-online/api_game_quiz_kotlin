@@ -84,27 +84,6 @@
         "topic_three":"A variável é chamada de receptor.",
         "topic_four":"A variável é chamada de default."
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "question": "O que é o Android Jetpack?",
     "topic_one": "Todos esses",
@@ -190,35 +169,6 @@
         "topic_three":"A variável é chamada de receptor.",
         "topic_four":"A variável é chamada de default."
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
         "question": "Qual é o ponto de entrada para um aplicativo Kotlin?",
         "topic_one":"fun main(){}",
@@ -255,11 +205,11 @@
         "topic_four":"println(b == null? 0: b.length)"
   },
   {
-        "question": "Qual trecho de código mostra corretamente um loop for usando um intervalo para exibir “1 2 3 4 5 6”?",
-        "topic_one":"for(z in 1..6) print("$z ")",
-        "topic_two":"for(z in 1..7) println("$z ")",
-        "topic_three":"for(z in 1 to 6) print("$z ")",
-        "topic_four":"for(z in 1..7) print("$z ")"
+    "question": "Qual trecho de código mostra corretamente um loop for usando um intervalo para exibir “1 2 3 4 5 6”?",
+    "topic_one": "for(z in 1..6) print(\"$z \")",
+    "topic_two": "for(z in 1..7) println(\"$z \")",
+    "topic_three": "for(z in 1 to 6) print(\"$z \")",
+    "topic_four": "for(z in 1..7) print(\"$z \")"
   },
   {
         "question": "Você está atualizando uma classe Java para Kotlin. O que você deve usar para substituir os campos static da classe Java?",
@@ -303,31 +253,6 @@
         "topic_three":"public",
         "topic_four":"protected"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "question": "O que é o Android Jetpack?",
     "topic_one": "Todos esses",
