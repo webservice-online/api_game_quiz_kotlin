@@ -1,0 +1,242 @@
+[
+  {
+    "question": "O que significa a sigla KMP no contexto de desenvolvimento com Kotlin?",
+    "topic_one": "Kotlin Multiplatform",
+    "topic_two": "Kotlin Mobile Project",
+    "topic_three": "Kotlin Main Platform",
+    "topic_four": "Kotlin Modular Programming",
+    "topic_five": "Kotlin Massive Project"
+  },
+  {
+    "question": "Em um projeto KMP, qual é o principal benefício do source set 'commonMain'?",
+    "topic_one": "Escrever código que será compartilhado entre todas as plataformas (Android, iOS, etc.).",
+    "topic_two": "Conter apenas o código específico para a plataforma Android.",
+    "topic_three": "Armazenar os arquivos de layout XML.",
+    "topic_four": "Gerenciar as dependências de rede.",
+    "topic_five": "Definir as cores e temas do aplicativo."
+  },
+  {
+    "question": "Qual palavra-chave é usada em 'commonMain' para declarar uma funcionalidade que precisa de uma implementação específica em cada plataforma?",
+    "topic_one": "expect",
+    "topic_two": "implement",
+    "topic_three": "platform",
+    "topic_four": "abstract",
+    "topic_five": "require"
+  },
+  {
+    "question": "Qual palavra-chave é usada nos source sets específicos (como 'androidMain' ou 'iosMain') para fornecer a implementação de uma declaração 'expect'?",
+    "topic_one": "actual",
+    "topic_two": "provide",
+    "topic_three": "realize",
+    "topic_four": "concrete",
+    "topic_five": "override"
+  },
+  {
+    "question": "Qual é a principal ferramenta de build usada para configurar e compilar um projeto Kotlin Multiplatform?",
+    "topic_one": "Gradle",
+    "topic_two": "Maven",
+    "topic_three": "Xcode Build System",
+    "topic_four": "Ant",
+    "topic_five": "CMake"
+  },
+  {
+    "question": "No KMP, o que o source set 'androidMain' contém?",
+    "topic_one": "Código específico da plataforma Android, como chamadas para APIs do Android SDK.",
+    "topic_two": "O código da lógica de negócios compartilhado.",
+    "topic_three": "Código específico da plataforma iOS.",
+    "topic_four": "Testes unitários compartilhados.",
+    "topic_five": "A UI feita em Jetpack Compose que será usada em todas as plataformas."
+  },
+  {
+    "question": "Qual framework de UI declarativo da JetBrains é a solução recomendada para criar interfaces compartilhadas em projetos KMP?",
+    "topic_one": "Compose Multiplatform",
+    "topic_two": "XML Layouts",
+    "topic_three": "SwiftUI",
+    "topic_four": "Flutter",
+    "topic_five": "React Native"
+  },
+  {
+    "question": "Qual linguagem de programação é a base de todo o ecossistema Kotlin Multiplatform?",
+    "topic_one": "Kotlin",
+    "topic_two": "Java",
+    "topic_three": "Swift",
+    "topic_four": "Dart",
+    "topic_five": "C++"
+  },
+  {
+    "question": "Para qual plataforma o compilador Kotlin/JVM é usado em um projeto KMP típico?",
+    "topic_one": "Android",
+    "topic_two": "iOS",
+    "topic_three": "Web (JavaScript)",
+    "topic_four": "Desktop (Windows, macOS, Linux)",
+    "topic_five": "watchOS"
+  },
+  {
+    "question": "Para qual plataforma o compilador Kotlin/Native é usado em um projeto KMP típico?",
+    "topic_one": "iOS",
+    "topic_two": "Android",
+    "topic_three": "Servidores baseados em Java",
+    "topic_four": "Aplicações Web",
+    "topic_five": "Google Chrome Extensions"
+  },
+  {
+    "question": "Qual biblioteca da JetBrains é frequentemente usada em KMP para realizar chamadas de rede de forma multiplataforma?",
+    "topic_one": "Ktor",
+    "topic_two": "Retrofit",
+    "topic_three": "Volley",
+    "topic_four": "URLSession",
+    "topic_five": "OkHttp"
+  },
+  {
+    "question": "Para persistência de dados em KMP, qual biblioteca gera código Kotlin type-safe a partir de statements SQL?",
+    "topic_one": "SQLDelight",
+    "topic_two": "Room",
+    "topic_three": "Realm",
+    "topic_four": "CoreData",
+    "topic_five": "Firebase Firestore"
+  },
+  {
+    "question": "Como a programação assíncrona é gerenciada de forma compartilhada em KMP?",
+    "topic_one": "Usando Kotlin Coroutines (Corrotinas).",
+    "topic_two": "Usando AsyncTasks no Android e Grand Central Dispatch no iOS.",
+    "topic_three": "Usando a biblioteca RxJava em todas as plataformas.",
+    "topic_four": "Apenas com threads manuais.",
+    "topic_five": "Usando Promises do JavaScript."
+  },
+  {
+    "question": "Qual biblioteca da JetBrains é a solução padrão para serialização/deserialização de JSON em código comum KMP?",
+    "topic_one": "kotlinx.serialization",
+    "topic_two": "Gson",
+    "topic_three": "Moshi",
+    "topic_four": "Jackson",
+    "topic_five": "Codable"
+  },
+  {
+    "question": "Qual padrão é usado para compartilhar ViewModels entre Android e iOS em KMP?",
+    "topic_one": "Criar uma classe ViewModel no 'commonMain' e usar bibliotecas como KMP-ViewModel para integrá-la.",
+    "topic_two": "Usar a classe 'androidx.lifecycle.ViewModel' diretamente no 'commonMain'.",
+    "topic_three": "Declarar a ViewModel com 'expect' e criar duas implementações 'actual' completas.",
+    "topic_four": "Não é possível compartilhar ViewModels.",
+    "topic_five": "Usar a arquitetura MVC em ambas as plataformas."
+  },
+  {
+    "question": "Para injeção de dependência em KMP, qual biblioteca é popular por ser puramente escrita em Kotlin e funcionar bem em multiplataforma?",
+    "topic_one": "Koin",
+    "topic_two": "Dagger/Hilt",
+    "topic_three": "Swinject",
+    "topic_four": "Guice",
+    "topic_five": "Spring Framework"
+  },
+  {
+    "question": "Onde você declararia uma dependência que deve ser usada por todas as plataformas em um projeto KMP?",
+    "topic_one": "No bloco 'commonMain.dependencies' do arquivo 'build.gradle.kts'.",
+    "topic_two": "No arquivo 'AndroidManifest.xml'.",
+    "topic_three": "No arquivo 'Podfile' do iOS.",
+    "topic_four": "Diretamente no topo de cada arquivo Kotlin.",
+    "topic_five": "No arquivo 'settings.gradle.kts'."
+  },
+  {
+    "question": "O que é o 'Flow' no contexto de Kotlin Coroutines e KMP?",
+    "topic_one": "Um fluxo de dados assíncrono que emite múltiplos valores sequencialmente.",
+    "topic_two": "Uma classe para controlar o fluxo de navegação da UI.",
+    "topic_three": "Uma forma de desenhar setas e diagramas na UI.",
+    "topic_four": "Um substituto para a classe 'if/else'.",
+    "topic_five": "Uma API exclusiva para a plataforma Android."
+  },
+  {
+    "question": "Para acessar recursos como strings ou imagens de forma compartilhada, qual é uma abordagem comum em KMP?",
+    "topic_one": "Usar uma biblioteca como 'moko-resources' que gera acessos seguros.",
+    "topic_two": "Colocar todos os recursos na pasta 'commonMain/resources'.",
+    "topic_three": "Copiar manualmente os recursos para as pastas 'res' do Android e 'Assets' do iOS.",
+    "topic_four": "Usar a classe 'R' do Android diretamente no código comum.",
+    "topic_five": "Fazer o download de todos os recursos da internet em tempo de execução."
+  },
+  {
+    "question": "Onde os testes unitários para a lógica de negócios compartilhada devem ser escritos?",
+    "topic_one": "No source set 'commonTest'.",
+    "topic_two": "No source set 'androidTest'.",
+    "topic_three": "No source set 'iosTest'.",
+    "topic_four": "Em um projeto de teste separado.",
+    "topic_five": "Não é possível testar código compartilhado."
+  },
+  {
+    "question": "Como o código Kotlin do 'iosMain' é exposto para o Swift/Objective-C no iOS?",
+    "topic_one": "O compilador Kotlin/Native o compila em um framework binário que pode ser importado no Xcode.",
+    "topic_two": "O código é transpilado para Swift durante a compilação.",
+    "topic_three": "É necessário usar JNI (Java Native Interface) para a comunicação.",
+    "topic_four": "O código Kotlin é executado em uma JVM embutida no aplicativo iOS.",
+    "topic_five": "Através de um servidor local que roda no dispositivo."
+  },
+  {
+    "question": "Qual é a principal limitação ao usar Flow de Coroutines diretamente no Swift para coletar dados da camada KMP?",
+    "topic_one": "As Coroutines e seus tipos genéricos não são traduzidos nativamente para o Swift, exigindo wrappers ou bibliotecas de adaptação.",
+    "topic_two": "O Flow só funciona com conexão à internet no iOS.",
+    "topic_three": "O Flow só pode emitir um único valor no iOS.",
+    "topic_four": "O Swift não suporta programação assíncrona.",
+    "topic_five": "O Flow é muito lento em dispositivos Apple."
+  },
+  {
+    "question": "O que é um 'typealias' com a palavra-chave 'actual' e quando é útil em KMP?",
+    "topic_one": "É um apelido para um tipo específico de plataforma, útil para mapear uma classe 'expect' para uma classe já existente da plataforma (ex: 'UUID').",
+    "topic_two": "É uma forma de renomear uma variável dentro de uma função.",
+    "topic_three": "É usado para criar um novo tipo de dado primitivo.",
+    "topic_four": "É uma diretiva de compilação para ignorar erros de tipo.",
+    "topic_five": "Não existe 'typealias' com 'actual'."
+  },
+  {
+    "question": "No contexto do gerenciamento de memória antigo do Kotlin/Native, o que significava o estado 'frozen' (congelado)?",
+    "topic_one": "Um objeto se tornava imutável e podia ser compartilhado entre múltiplas threads.",
+    "topic_two": "O aplicativo parava de responder.",
+    "topic_three": "O objeto era salvo permanentemente no disco.",
+    "topic_four": "A UI do aplicativo era bloqueada para atualizações.",
+    "topic_five": "O objeto era marcado para ser removido pelo garbage collector."
+  },
+  {
+    "question": "Para uma classe no 'commonMain' ser observável em uma UI SwiftUI, qual abordagem é comumente utilizada?",
+    "topic_one": "Publicar um Flow a partir do ViewModel KMP e usar um wrapper para convertê-lo em um 'Publisher' do Combine no lado do iOS.",
+    "topic_two": "Anotar a classe Kotlin com '@Published'.",
+    "topic_three": "Herda-la diretamente de 'ObservableObject' do SwiftUI no 'commonMain'.",
+    "topic_four": "Enviar notificações manuais através do 'NotificationCenter'.",
+    "topic_five": "Não é possível integrar com SwiftUI."
+  },
+  {
+    "question": "O que o plugin 'No-args compiler' faz e por que ele pode ser necessário em KMP?",
+    "topic_one": "Gera um construtor sem argumentos para classes, o que é exigido por algumas bibliotecas de persistência ou serialização.",
+    "topic_two": "Remove todos os argumentos de todas as funções para aumentar a segurança.",
+    "topic_three": "Permite que funções sejam chamadas sem passar parâmetros.",
+    "topic_four": "Otimiza o código para não usar argumentos na stack de chamadas.",
+    "topic_five": "É um plugin para testes que valida funções sem argumentos."
+  },
+  {
+    "question": "Qual a finalidade de usar 'fun interface' (ou SAM interface) no código compartilhado em KMP?",
+    "topic_one": "Permite uma sintaxe de lambda mais limpa ao implementar interfaces com um único método abstrato em código Kotlin.",
+    "topic_two": "É a única maneira de criar interfaces no 'commonMain'.",
+    "topic_three": "Define uma interface que só pode ser usada na UI.",
+    "topic_four": "Cria uma interface que não pode ter métodos.",
+    "topic_five": "Garante que a interface seja implementada como uma classe final."
+  },
+  {
+    "question": "Como você pode acessar uma configuração específica do 'build.gradle' (como uma API key) no seu código 'commonMain'?",
+    "topic_one": "Definir a key como um 'buildConfigField' nas configurações de cada plataforma e acessá-la via 'expect'/'actual'.",
+    "topic_two": "Ler o arquivo 'build.gradle.kts' diretamente do código Kotlin.",
+    "topic_three": "Salvar a key em um arquivo de texto no 'commonMain' e lê-la em tempo de execução.",
+    "topic_four": "Não é possível, as chaves devem ser colocadas diretamente no código.",
+    "topic_five": "Usando a anotação '@BuildConfig'."
+  },
+  {
+    "question": "Qual é a função do target 'js()' no bloco 'kotlin' do 'build.gradle.kts'?",
+    "topic_one": "Configurar a compilação do código Kotlin para JavaScript, permitindo que ele rode em navegadores ou no Node.js.",
+    "topic_two": "Incluir bibliotecas de script Java no projeto.",
+    "topic_three": "Criar arquivos JSON automaticamente.",
+    "topic_four": "Analisar a sintaxe de arquivos JavaScript existentes.",
+    "topic_five": "Habilitar o uso de JavaServer Pages (JSP)."
+  },
+  {
+    "question": "Ao usar SQLDelight, o que os arquivos com extensão '.sq' contêm?",
+    "topic_one": "Statements SQL (CREATE TABLE, INSERT, SELECT, etc.) com nomes para as queries.",
+    "topic_two": "Código Kotlin que acessa o banco de dados.",
+    "topic_three": "Configurações de conexão com o banco de dados.",
+    "topic_four": "O banco de dados SQLite já populado.",
+    "topic_five": "Scripts de migração escritos em Swift."
+  }
+]
