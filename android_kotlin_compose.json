@@ -1,0 +1,242 @@
+[
+  {
+    "question": "Qual é a principal função do Jetpack Compose no desenvolvimento Android?",
+    "topic_one": "Construir interfaces de usuário (UI) de forma declarativa.",
+    "topic_two": "Gerenciar bancos de dados locais.",
+    "topic_three": "Realizar chamadas de rede.",
+    "topic_four": "Gerenciar o ciclo de vida dos componentes.",
+    "topic_five": "Compilar o código Kotlin para a máquina virtual do Android."
+  },
+  {
+    "question": "Em Jetpack Compose, qual é o composable fundamental para exibir um texto na tela?",
+    "topic_one": "Text()",
+    "topic_two": "TextView()",
+    "topic_three": "StringView()",
+    "topic_four": "Label()",
+    "topic_five": "DisplayText()"
+  },
+  {
+    "question": "Qual anotação é usada para marcar uma função como um componente de UI no Jetpack Compose?",
+    "topic_one": "@Composable",
+    "topic_two": "@View",
+    "topic_three": "@UI",
+    "topic_four": "@Component",
+    "topic_five": "@Render"
+  },
+  {
+    "question": "Como o Jetpack Compose gerencia o estado de um componente de UI?",
+    "topic_one": "Usando `remember` e `mutableStateOf`",
+    "topic_two": "Através de `findViewById`",
+    "topic_three": "Com `ViewModels` e `LiveData` exclusivamente",
+    "topic_four": "Modificando as Views diretamente",
+    "topic_five": "Utilizando arquivos XML de estado"
+  },
+  {
+    "question": "Qual composable é usado para organizar componentes filhos em uma sequência vertical?",
+    "topic_one": "Column",
+    "topic_two": "Row",
+    "topic_three": "Box",
+    "topic_four": "LazyColumn",
+    "topic_five": "VerticalLayout"
+  },
+  {
+    "question": "E para organizar componentes filhos em uma sequência horizontal, qual composable é utilizado?",
+    "topic_one": "Row",
+    "topic_two": "Column",
+    "topic_three": "Line",
+    "topic_four": "HorizontalLayout",
+    "topic_five": "SpacedBy"
+  },
+  {
+    "question": "O que o `Modifier` faz em Jetpack Compose?",
+    "topic_one": "Decora ou adiciona comportamento a um composable, como preenchimento, margem e eventos de clique.",
+    "topic_two": "Define o tema do aplicativo, como cores e fontes.",
+    "topic_three": "Gerencia a navegação entre as telas.",
+    "topic_four": "Controla o estado da UI.",
+    "topic_five": "Acessa recursos do sistema, como a câmera."
+  },
+  {
+    "question": "Qual é a alternativa do Compose para o `RecyclerView` do sistema de Views tradicional, para exibir listas grandes e eficientes?",
+    "topic_one": "LazyColumn / LazyRow",
+    "topic_two": "Column / Row com `forEach`",
+    "topic_three": "RecyclerViewComposable",
+    "topic_four": "ScrollableList",
+    "topic_five": "ComposableList"
+  },
+  {
+    "question": "Qual é o propósito do `ViewModel` na arquitetura Android moderna com Compose?",
+    "topic_one": "Armazenar e gerenciar dados relacionados à UI, sobrevivendo a mudanças de configuração.",
+    "topic_two": "Desenhar os componentes de UI na tela.",
+    "topic_three": "Lidar diretamente com as chamadas de API.",
+    "topic_four": "Substituir completamente o uso de `State` no Compose.",
+    "topic_five": "Definir a aparência visual dos componentes."
+  },
+  {
+    "question": "O que são Coroutines em Kotlin e por que são importantes no Android?",
+    "topic_one": "São uma forma de escrever código assíncrono de maneira sequencial, evitando o bloqueio da thread principal.",
+    "topic_two": "São um novo tipo de layout para interfaces complexas.",
+    "topic_three": "São bibliotecas para animações no Jetpack Compose.",
+    "topic_four": "São a única maneira de se comunicar com a internet.",
+    "topic_five": "São funções que substituem os `if/else`."
+  },
+  {
+    "question": "Qual escopo de coroutine (`CoroutineScope`) é comumente usado em um `ViewModel` para garantir que as coroutines sejam canceladas quando o `ViewModel` for destruído?",
+    "topic_one": "viewModelScope",
+    "topic_two": "GlobalScope",
+    "topic_three": "lifecycleScope",
+    "topic_four": "applicationScope",
+    "topic_five": "customScope"
+  },
+  {
+    "question": "Em Compose, como você pode observar um `StateFlow` ou `LiveData` de um `ViewModel` e atualizar a UI quando o valor muda?",
+    "topic_one": "Usando a função `.collectAsState()`",
+    "topic_two": "Com um `Observer` manual dentro do composable",
+    "topic_three": "Chamando `invalidate()` na tela",
+    "topic_four": "Não é possível observar `StateFlow` diretamente",
+    "topic_five": "Através da anotação `@Observe`"
+  },
+  {
+    "question": "Qual componente do Jetpack é recomendado para gerenciar a navegação entre diferentes telas (composables) em um aplicativo Compose?",
+    "topic_one": "Navigation Compose",
+    "topic_two": "Intents",
+    "topic_three": "FragmentManager",
+    "topic_four": "ActivitySwitcher",
+    "topic_five": "ScreenManager"
+  },
+  {
+    "question": "O que é 'recomposição' (recomposition) no Jetpack Compose?",
+    "topic_one": "É o processo de chamar novamente as funções composable quando o estado do qual elas dependem muda, para atualizar a UI.",
+    "topic_two": "É a reinstalação completa do aplicativo.",
+    "topic_three": "É a recriação de todas as Activities.",
+    "topic_four": "É um erro que ocorre durante a compilação do layout.",
+    "topic_five": "É a atualização manual da tela pelo desenvolvedor."
+  },
+  {
+    "question": "Para que serve o composable `Scaffold`?",
+    "topic_one": "Fornece uma estrutura de layout padrão do Material Design, com slots para TopAppBar, BottomAppBar, FloatingActionButton, etc.",
+    "topic_two": "É um container para exibir imagens carregadas da internet.",
+    "topic_three": "Define a fonte padrão do aplicativo.",
+    "topic_four": "Gerencia o estado de um formulário.",
+    "topic_five": "É usado para criar animações de transição."
+  },
+  {
+    "question": "Qual é a palavra-chave em Kotlin usada para declarar uma variável que pode ser nula?",
+    "topic_one": "Adicionando um `?` ao tipo (ex: String?)",
+    "topic_two": "A palavra-chave `nullable`",
+    "topic_three": "A anotação `@Nullable`",
+    "topic_four": "A palavra-chave `optional`",
+    "topic_five": "Todas as variáveis são nulas por padrão"
+  },
+  {
+    "question": "O que o operador `?.` (safe call) faz em Kotlin?",
+    "topic_one": "Executa a operação seguinte apenas se o valor da variável não for nulo, caso contrário, retorna nulo.",
+    "topic_two": "Força a chamada mesmo que a variável seja nula, podendo causar um NullPointerException.",
+    "topic_three": "Verifica se a variável é do tipo especificado.",
+    "topic_four": "É um operador de comparação.",
+    "topic_five": "Converte uma variável para não nula."
+  },
+  {
+    "question": "Qual a finalidade das 'data classes' em Kotlin?",
+    "topic_one": "São classes concisas usadas principalmente para armazenar dados, que geram automaticamente `equals()`, `hashCode()`, `toString()`, etc.",
+    "topic_two": "São classes usadas exclusivamente para acesso a banco de dados.",
+    "topic_three": "São classes que não podem ser instanciadas.",
+    "topic_four": "São classes para definir a interface do usuário.",
+    "topic_five": "São classes que representam os componentes do Android."
+  },
+  {
+    "question": "Em Jetpack Compose, como você lida com um clique em um botão?",
+    "topic_one": "Passando uma função lambda para o parâmetro `onClick` do `Button`.",
+    "topic_two": "Usando `setOnClickListener` como no sistema de Views tradicional.",
+    "topic_three": "Adicionando um `Modifier.click()`.",
+    "topic_four": "Envolvendo o botão em um `Clickable`.",
+    "topic_five": "Implementando a interface `OnClickListener`."
+  },
+  {
+    "question": "O que é 'State Hoisting' (Elevação de Estado) em Compose?",
+    "topic_one": "É o padrão de mover o estado de um composable para o seu chamador, tornando o composable sem estado (stateless).",
+    "topic_two": "É o processo de salvar o estado em um `Bundle`.",
+    "topic_three": "É quando o estado é armazenado globalmente.",
+    "topic_four": "É um mecanismo de criptografia de estado.",
+    "topic_five": "É o nome dado à primeira composição da UI."
+  },
+  {
+    "question": "Qual composable permite sobrepor componentes, colocando-os uns na frente dos outros?",
+    "topic_one": "Box",
+    "topic_two": "Column",
+    "topic_three": "Row",
+    "topic_four": "Stack",
+    "topic_five": "OverlayLayout"
+  },
+  {
+    "question": "Qual biblioteca do Jetpack é comumente usada para persistência de dados local (banco de dados SQL)?",
+    "topic_one": "Room",
+    "topic_two": "SQLiteOpenHelper",
+    "topic_three": "Realm",
+    "topic_four": "Firebase Firestore",
+    "topic_five": "DataStore"
+  },
+  {
+    "question": "Para que serve a anotação `@Preview` no Jetpack Compose?",
+    "topic_one": "Permite visualizar um composable no painel de design do Android Studio sem precisar executar o app no emulador/dispositivo.",
+    "topic_two": "Marca uma função como sendo uma versão de teste.",
+    "topic_three": "Indica que o composable está pronto para produção.",
+    "topic_four": "Define as cores de preview do app.",
+    "topic_five": "Gera a documentação para o composable."
+  },
+  {
+    "question": "O que são 'funções de extensão' (extension functions) em Kotlin?",
+    "topic_one": "Permitem adicionar novas funções a uma classe existente sem precisar herdar dela.",
+    "topic_two": "São funções que estendem o tempo de vida de um objeto.",
+    "topic_three": "São funções que só podem ser usadas dentro de outras funções.",
+    "topic_four": "São funções para expandir a memória do aplicativo.",
+    "topic_five": "São funções que criam novas threads."
+  },
+  {
+    "question": "Como o `MaterialTheme` contribui para a UI em Jetpack Compose?",
+    "topic_one": "Fornece um sistema de design centralizado, definindo cores, tipografia e formas para a aplicação.",
+    "topic_two": "É um composable para exibir listas de materiais.",
+    "topic_three": "Controla a lógica de negócios da UI.",
+    "topic_four": "Gerencia o acesso a recursos de hardware.",
+    "topic_five": "É a classe base para todos os composables."
+  },
+  {
+    "question": "Qual é a função do `remember` em um composable?",
+    "topic_one": "Armazena um objeto na composição e o mantém durante as recomposições.",
+    "topic_two": "Lembra o usuário de uma tarefa.",
+    "topic_three": "Salva o estado permanentemente no dispositivo.",
+    "topic_four": "Faz a função ser executada apenas uma vez.",
+    "topic_five": "É usado para declarar uma variável imutável."
+  },
+  {
+    "question": "Para que serve a função `withContext` em coroutines?",
+    "topic_one": "Para mudar o contexto de execução da coroutine, como mudar da thread principal (Dispatchers.Main) para uma de background (Dispatchers.IO).",
+    "topic_two": "Para passar dados entre diferentes Activities.",
+    "topic_three": "Para criar um novo ViewModel.",
+    "topic_four": "Para definir o contexto do aplicativo.",
+    "topic_five": "Para aplicar um estilo a um composable."
+  },
+  {
+    "question": "Qual composable é usado para criar um campo de entrada de texto?",
+    "topic_one": "TextField / OutlinedTextField",
+    "topic_two": "EditText",
+    "topic_three": "InputText",
+    "topic_four": "TextEntry",
+    "topic_five": "FormField"
+  },
+  {
+    "question": "O que o `LaunchedEffect` faz em Jetpack Compose?",
+    "topic_one": "Executa um bloco de código de coroutine quando o composable entra na composição, e o cancela quando sai.",
+    "topic_two": "Lança uma nova Activity.",
+    "topic_three": "Aplica um efeito de animação de lançamento.",
+    "topic_four": "É usado para desenhar efeitos de partículas.",
+    "topic_five": "Dispara um evento de sistema."
+  },
+  {
+    "question": "Como você aplicaria um espaçamento igual entre todos os itens de uma `Column`?",
+    "topic_one": "Usando `verticalArrangement = Arrangement.spacedBy(valor)` no construtor da `Column`.",
+    "topic_two": "Adicionando um `Spacer` manualmente entre cada item.",
+    "topic_three": "Com `Modifier.padding()` em cada item.",
+    "topic_four": "Nenhuma das opções está correta.",
+    "topic_five": "Definindo uma margem no `MaterialTheme`."
+  }
+]

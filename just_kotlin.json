@@ -1,0 +1,242 @@
+[
+  {
+    "question": "Qual é a principal diferença entre `val` e `var` em Kotlin?",
+    "topic_one": "`val` declara uma variável imutável (somente leitura), enquanto `var` declara uma variável mutável.",
+    "topic_two": "`val` é para tipos primitivos e `var` é para objetos.",
+    "topic_three": "`val` só pode ser usada dentro de funções e `var` globalmente.",
+    "topic_four": "Não há diferença, são apenas aliases.",
+    "topic_five": "`val` armazena na stack e `var` armazena na heap."
+  },
+  {
+    "question": "O que o operador de chamada segura (safe call) `?.` faz em Kotlin?",
+    "topic_one": "Executa a chamada de método ou acesso a propriedade apenas se o objeto não for nulo; caso contrário, retorna nulo.",
+    "topic_two": "Força a chamada, mesmo que o objeto seja nulo, causando um erro.",
+    "topic_three": "Converte um tipo nulo para um tipo não-nulo.",
+    "topic_four": "Verifica se o objeto é nulo e retorna um booleano.",
+    "topic_five": "É um atalho para um bloco try-catch."
+  },
+  {
+    "question": "Qual a principal vantagem de usar uma `data class` em vez de uma `class` normal?",
+    "topic_one": "Ela gera automaticamente métodos como `equals()`, `hashCode()`, `toString()`, `copy()` e `componentN()`.",
+    "topic_two": "Ela permite herança múltipla.",
+    "topic_three": "Ela consome menos memória que uma classe normal.",
+    "topic_four": "Ela só pode ser usada para armazenar dados de um banco de dados.",
+    "topic_five": "Ela é a única classe que pode ter propriedades imutáveis."
+  },
+  {
+    "question": "O que são funções de extensão (extension functions)?",
+    "topic_one": "Permitem adicionar novas funções a uma classe existente sem a necessidade de herdar dela.",
+    "topic_two": "São funções que só podem ser declaradas dentro de outras funções.",
+    "topic_three": "São funções que estendem a visibilidade de uma classe.",
+    "topic_four": "São funções que nunca podem retornar nulo.",
+    "topic_five": "São funções para criar threads adicionais."
+  },
+  {
+    "question": "Na expressão `when`, qual é a função da palavra-chave `else`?",
+    "topic_one": "Serve como o caso padrão, que é executado se nenhum dos outros casos for correspondido.",
+    "topic_two": "É obrigatória em todas as expressões `when`.",
+    "topic_three": "Indica o fim da expressão `when`.",
+    "topic_four": "É usada para comparar valores nulos.",
+    "topic_five": "Cria um loop dentro da expressão."
+  },
+  {
+    "question": "O que é uma função de ordem superior (higher-order function)?",
+    "topic_one": "É uma função que aceita outras funções como parâmetros ou retorna uma função.",
+    "topic_two": "É uma função que pertence a uma classe de ordem superior.",
+    "topic_three": "É uma função que sempre executa mais rápido que as outras.",
+    "topic_four": "É uma função que só pode ser chamada uma vez.",
+    "topic_five": "É um sinônimo para uma função recursiva."
+  },
+  {
+    "question": "Qual é o propósito de um `companion object` dentro de uma classe?",
+    "topic_one": "Permite definir membros (propriedades e funções) que podem ser acessados usando o nome da classe, similar a membros estáticos em Java.",
+    "topic_two": "Cria uma segunda instância da classe automaticamente.",
+    "topic_three": "É um objeto que acompanha o ciclo de vida da classe para fins de depuração.",
+    "topic_four": "Define métodos que só podem ser chamados por classes companheiras.",
+    "topic_five": "É usado para implementar o padrão Singleton exclusivamente."
+  },
+  {
+    "question": "Qual das seguintes funções de escopo (scope functions) é mais adequada para configurar as propriedades de um objeto recém-criado e retorná-lo?",
+    "topic_one": "apply",
+    "topic_two": "let",
+    "topic_three": "run",
+    "topic_four": "with",
+    "topic_five": "also"
+  },
+  {
+    "question": "O que o operador `!!` (non-null assertion) faz?",
+    "topic_one": "Converte qualquer valor para um tipo não-nulo, lançando uma `NullPointerException` se o valor for nulo.",
+    "topic_two": "Retorna `true` se o valor não for nulo e `false` caso contrário.",
+    "topic_three": "Cria uma cópia não-nula do objeto.",
+    "topic_four": "Executa a operação seguinte de forma segura.",
+    "topic_five": "É usado para declarar uma variável que nunca será nula."
+  },
+  {
+    "question": "O que é uma 'sealed class' (classe selada) e qual sua principal vantagem?",
+    "topic_one": "É uma classe base que restringe a hierarquia de classes, útil em expressões `when` para garantir que todos os casos sejam cobertos.",
+    "topic_two": "É uma classe que não pode ser instanciada.",
+    "topic_three": "É uma classe final que não pode ser herdada.",
+    "topic_four": "É uma classe usada para criptografar dados.",
+    "topic_five": "É uma classe que só permite herança dentro do mesmo pacote."
+  },
+  {
+    "question": "Qual a sintaxe para uma expressão lambda em Kotlin?",
+    "topic_one": "{ parâmetros -> corpo da função }",
+    "topic_two": "(parâmetros) => { corpo da função }",
+    "topic_three": "function(parâmetros) { corpo }",
+    "topic_four": "lambda { parâmetros | corpo }",
+    "topic_five": "def (parâmetros): corpo"
+  },
+  {
+    "question": "Para que serve a palavra-chave `inline` antes de uma função?",
+    "topic_one": "Instrui o compilador a copiar o corpo da função para o local da chamada, evitando a sobrecarga de criar um objeto de função (útil com lambdas).",
+    "topic_two": "Faz com que a função execute em uma única linha.",
+    "topic_three": "Cria a função dentro da mesma classe em que é chamada.",
+    "topic_four": "Garante que a função seja executada na thread principal.",
+    "topic_five": "Marca a função como sendo menos importante para o compilador."
+  },
+  {
+    "question": "Como se declara um mapa (Map) imutável em Kotlin com alguns valores?",
+    "topic_one": "mapOf(\"chave1\" to \"valor1\", \"chave2\" to \"valor2\")",
+    "topic_two": "new Map({\"chave1\": \"valor1\"})",
+    "topic_three": "mapOf([\"chave1\", \"valor1\"], [\"chave2\", \"valor2\"])",
+    "topic_four": "Map.of(\"chave1\", \"valor1\", \"chave2\", \"valor2\")",
+    "topic_five": "{\"chave1\" to \"valor1\", \"chave2\" to \"valor2\"}"
+  },
+  {
+    "question": "O que o operador Elvis (`?:`) faz?",
+    "topic_one": "Recebe duas expressões e, se a primeira for não-nula, a retorna; caso contrário, retorna a segunda.",
+    "topic_two": "É um operador de comparação de igualdade estrita.",
+    "topic_three": "Verifica se uma string contém um determinado padrão.",
+    "topic_four": "É um apelido para o operador `||` (OU lógico).",
+    "topic_five": "Lança uma exceção se o valor à esquerda for nulo."
+  },
+  {
+    "question": "Qual é a principal função do bloco `init` dentro de uma classe?",
+    "topic_one": "É um bloco de inicialização que é executado quando uma instância da classe é criada.",
+    "topic_two": "É uma função que inicializa o `companion object`.",
+    "topic_three": "É um substituto para o construtor primário.",
+    "topic_four": "É executado apenas uma vez, quando a classe é carregada.",
+    "topic_five": "Define variáveis estáticas para a classe."
+  },
+  {
+    "question": "Qual a diferença entre `List` e `MutableList`?",
+    "topic_one": "`List` é uma interface de coleção somente leitura, enquanto `MutableList` permite adicionar e remover elementos.",
+    "topic_two": "`List` só pode conter elementos de um único tipo, `MutableList` pode conter vários.",
+    "topic_three": "`List` é ordenada e `MutableList` não é.",
+    "topic_four": "Não há diferença de funcionalidade, apenas de nome.",
+    "topic_five": "`List` usa um array por baixo e `MutableList` usa uma lista ligada."
+  },
+  {
+    "question": "O que a função de coleção `.map()` faz?",
+    "topic_one": "Transforma cada elemento de uma coleção em um novo elemento, retornando uma nova lista com os resultados.",
+    "topic_two": "Cria um `Map` a partir de uma lista.",
+    "topic_three": "Mapeia a localização de cada elemento na memória.",
+    "topic_four": "Filtra os elementos da coleção com base em uma condição.",
+    "topic_five": "Executa uma operação em cada elemento sem retornar nada."
+  },
+  {
+    "question": "O que a delegação de propriedade `by lazy` faz?",
+    "topic_one": "A inicialização da propriedade é adiada até o seu primeiro acesso, e o valor calculado é armazenado para acessos futuros.",
+    "topic_two": "Marca a propriedade como sendo de baixa prioridade.",
+    "topic_three": "Faz com que a propriedade seja inicializada em uma thread separada.",
+    "topic_four": "Delega o getter e o setter para outra classe.",
+    "topic_five": "Indica que a propriedade deve ser inicializada com o valor `null`."
+  },
+  {
+    "question": "Qual é o modificador de visibilidade padrão em Kotlin se nenhum for especificado?",
+    "topic_one": "public",
+    "topic_two": "private",
+    "topic_three": "protected",
+    "topic_four": "internal",
+    "topic_five": "package-private"
+  },
+  {
+    "question": "O que são 'string templates' (ou interpolação de string) em Kotlin?",
+    "topic_one": "Uma forma de embutir variáveis e expressões dentro de uma string usando o caractere `$`, como em `\"Olá, $nome\"`.",
+    "topic_two": "Modelos de string pré-definidos na biblioteca padrão.",
+    "topic_three": "Uma classe para construir strings de forma eficiente.",
+    "topic_four": "Uma função para formatar strings com base em um padrão.",
+    "topic_five": "Um tipo especial de comentário para documentar strings."
+  },
+  {
+    "question": "Qual a finalidade da palavra-chave `object` quando usada sozinha (não como `companion object`)?",
+    "topic_one": "Para declarar um objeto Singleton, ou seja, uma classe que tem apenas uma instância.",
+    "topic_two": "Para criar uma instância anônima de uma classe.",
+    "topic_three": "É um alias para o tipo `Any`.",
+    "topic_four": "Para declarar uma classe que não pode ser herdada.",
+    "topic_five": "Para criar um objeto que só contém dados."
+  },
+  {
+    "question": "Qual função de escopo é um híbrido, retornando o resultado da lambda (`run`) mas passando o objeto como argumento (`let`)?",
+    "topic_one": "Nenhuma, a descrição não corresponde a uma única função de escopo padrão. `run` usa `this`, `let` usa `it`.",
+    "topic_two": "also",
+    "topic_three": "apply",
+    "topic_four": "with",
+    "topic_five": "takeIf"
+  },
+  {
+    "question": "Qual função da biblioteca padrão de coleções retorna `true` se TODOS os elementos corresponderem a um predicado?",
+    "topic_one": "all()",
+    "topic_two": "any()",
+    "topic_three": "none()",
+    "topic_four": "filter()",
+    "topic_five": "check()"
+  },
+  {
+    "question": "O que a palavra-chave `in` pode fazer além de ser usada em loops `for`?",
+    "topic_one": "Pode ser usada como um operador para verificar se um valor pertence a um intervalo, coleção ou range.",
+    "topic_two": "Pode ser usada para injetar dependências.",
+    "topic_three": "Pode ser usada para declarar parâmetros de entrada em funções.",
+    "topic_four": "Pode ser usada para abrir um arquivo.",
+    "topic_five": "Pode ser usada para criar uma instância."
+  },
+  {
+    "question": "Para que serve a palavra-chave `suspend` em uma função?",
+    "topic_one": "Marca a função como uma operação que pode ser pausada e retomada, permitindo seu uso dentro de coroutines sem bloquear uma thread.",
+    "topic_two": "Faz com que a execução da função seja adiada por um tempo.",
+    "topic_three": "Suspende todas as outras threads enquanto a função é executada.",
+    "topic_four": "Marca a função como obsoleta.",
+    "topic_five": "Indica que a função tem um resultado suspeito e precisa de verificação."
+  },
+  {
+    "question": "O que a função `let` retorna?",
+    "topic_one": "O resultado da expressão lambda que ela executa.",
+    "topic_two": "O objeto de contexto original (this).",
+    "topic_three": "Um valor booleano indicando sucesso.",
+    "topic_four": "Nada, é do tipo `Unit`.",
+    "topic_five": "Uma nova instância do objeto."
+  },
+  {
+    "question": "Como se define um parâmetro com valor padrão em uma função Kotlin?",
+    "topic_one": "fun minhaFuncao(parametro: Int = 0)",
+    "topic_two": "fun minhaFuncao(parametro: Int default 0)",
+    "topic_three": "fun minhaFuncao(parametro: Int ?= 0)",
+    "topic_four": "fun minhaFuncao(int parametro = 0)",
+    "topic_five": "fun minhaFuncao(parametro: Int | 0)"
+  },
+  {
+    "question": "O que são 'named arguments' (argumentos nomeados)?",
+    "topic_one": "A capacidade de especificar o nome do parâmetro ao chamar uma função, permitindo reordenar os argumentos ou pular os que têm valor padrão.",
+    "topic_two": "Argumentos que são armazenados em um `Map` com seus nomes como chaves.",
+    "topic_three": "Argumentos cujo nome deve ser declarado como uma `String`.",
+    "topic_four": "Uma forma de dar apelidos a argumentos de função.",
+    "topic_five": "Argumentos que só podem ser acessados pelo nome dentro da função."
+  },
+  {
+    "question": "Qual é a superclasse universal de todas as classes em Kotlin?",
+    "topic_one": "Any",
+    "topic_two": "Object",
+    "topic_three": "Unit",
+    "topic_four": "Nothing",
+    "topic_five": "KotlinObject"
+  },
+  {
+    "question": "Para que serve a palavra-chave `operator` antes de uma declaração de função?",
+    "topic_one": "Permite que a função seja chamada através de um símbolo de operador correspondente (ex: `plus` para `+`).",
+    "topic_two": "Indica que a função executa operações matemáticas.",
+    "topic_three": "Transforma a função em um operador lógico.",
+    "topic_four": "Restringe o uso da função apenas para tipos numéricos.",
+    "topic_five": "Cria um novo operador customizado para a linguagem."
+  }
+]
